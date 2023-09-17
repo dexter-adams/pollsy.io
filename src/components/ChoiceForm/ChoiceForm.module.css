@@ -1,0 +1,45 @@
+.choice-form {
+  @apply block;
+}
+
+.choice-form__fields {
+  background-color: color-mix(in srgb, currentColor 8%, transparent);
+}
+
+.choice-form__row {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+.choice-form__field-wrapper {
+  display: grid;
+  grid-template-areas: "content";
+  position: relative;
+}
+.choice-form__field-wrapper input {
+  grid-area: content;
+  padding-right: 2.5rem;
+}
+.choice-form__field-wrapper button {
+  grid-area: content;
+  position: absolute;
+  top: 50%;
+  right: var(--kbs-input-padding-x);
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.choice-form__field-wrapper button .h-6, .choice-form__field-wrapper button .w-6 {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.choice-form__actions {
+  @apply grid grid-cols-[1fr_auto] gap-3 mt-3;
+}
+
+/*# sourceMappingURL=ChoiceForm.module.css.map */

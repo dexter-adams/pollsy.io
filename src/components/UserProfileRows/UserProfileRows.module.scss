@@ -1,0 +1,22 @@
+@use '../../styles/variables';
+
+.profile-rows {
+
+}
+
+.profile-row {
+  overflow: hidden;
+
+  &__item {
+
+
+    &--primary {
+
+
+    }
+
+    &--edit {
+      @apply grid grid-cols-[1fr_auto];
+    }
+  }
+}

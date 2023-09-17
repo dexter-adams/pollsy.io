@@ -1,0 +1,47 @@
+.choice-form {
+	@apply block;
+}
+
+.choice-form__fields {
+	background-color: color-mix(in srgb, currentColor 8%, transparent);
+}
+
+.choice-form__row {
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 1fr;
+	gap: 8px;
+}
+
+.choice-form__field-wrapper {
+	display: grid;
+	grid-template-areas: 'content';
+	position: relative; // Set the wrapper as a positioning context
+
+	input {
+		grid-area: content;
+		padding-right: 2.5rem; // Add space for the "X" button
+	}
+
+	button {
+		grid-area: content;
+		position: absolute;
+		top: 50%; // Vertically align the button in the middle
+		right: var(--kbs-input-padding-x); // Adjust the right spacing
+		transform: translateY(-50%); // Center the button vertically
+		background: none;
+		border: none;
+		cursor: pointer;
+		outline: none; // Remove the outline when focused
+
+		// Style the button icon
+		.h-6, .w-6 {
+			height: 1.5rem;
+			width: 1.5rem;
+		}
+	}
+}
+
+.choice-form__actions {
+	@apply grid grid-cols-[1fr_auto] gap-3 mt-3;
+}

@@ -1,0 +1,44 @@
+input {
+  @apply rounded-md;
+}
+input[type] {
+  background-color: color-mix(in srgb, currentColor 8%, transparent);
+}
+input[type=text] {
+  @apply px-5 py-3 mix-blend-difference;
+}
+input[type=tel] {
+  @apply px-5 py-3 mix-blend-difference;
+}
+input[type=email] {
+  @apply px-5 py-3 mix-blend-difference;
+}
+input[type=password] {
+  @apply px-5 py-3 mix-blend-difference;
+}
+
+.form {
+  @apply flex flex-col gap-4;
+}
+
+.form-row {
+  @apply flex flex-col gap-2;
+}
+
+.form-footer {
+  @apply flex flex-col gap-4;
+}
+
+.error {
+  @apply ring-1 ring-red px-2 py-2 rounded leading-none text-red text-xs;
+}
+
+.success {
+  @apply ring-1 ring-green px-2 py-2 rounded leading-none text-green text-xs;
+}
+
+.field-label {
+  @apply block mb-3;
+}
+
+/*# sourceMappingURL=forms.css.map */

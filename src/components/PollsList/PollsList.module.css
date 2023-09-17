@@ -1,0 +1,31 @@
+.poll-cards {
+  @apply flex flex-col gap-4 px-4;
+}
+.poll-cards .poll-card {
+  background-color: color-mix(in srgb, currentColor 8%, transparent);
+  @apply grid gap-3 p-[20px] rounded-md;
+}
+.poll-cards .poll-card__question {
+  @apply text-lg font-bold;
+}
+.poll-cards .poll-card__question a {
+  @apply text-[inherit];
+}
+.poll-cards .poll-card__voter-photos {
+  @apply flex align-middle justify-items-start flex-row-reverse;
+}
+.poll-cards .poll-card__voter-photos div {
+  @apply relative w-[20px] h-[20px] rounded-full overflow-hidden bg-gray-900;
+}
+.poll-cards .poll-card__voter-photos div:not(:last-child) {
+  @apply ml-[-10px] z-0;
+}
+.poll-cards .poll-card__voter-photos div img {
+  @apply object-cover;
+}
+
+.no-polls-message {
+  @apply text-xl text-center;
+}
+
+/*# sourceMappingURL=PollsList.module.css.map */

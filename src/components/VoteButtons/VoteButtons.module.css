@@ -1,0 +1,20 @@
+.vote-buttons {
+  display: contents;
+}
+.vote-buttons__buttons {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  @apply border border-gray-900/10;
+}
+.vote-buttons__buttons button[disabled] svg {
+  @apply opacity-40;
+}
+.vote-buttons__votes {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  align-self: center;
+  border-width: 1px 1px 1px 0;
+  @apply p-4 border-gray-900/10 rounded-e-md;
+}
+
+/*# sourceMappingURL=VoteButtons.module.css.map */

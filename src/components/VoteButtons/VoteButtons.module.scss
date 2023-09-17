@@ -1,0 +1,27 @@
+.vote-buttons {
+	display: contents;
+
+	&__buttons {
+		grid-column-start: 2;
+		grid-column-end: 2;
+
+		@apply border border-gray-900/10;
+
+		button {
+			&[disabled] {
+				svg {
+					@apply opacity-40;
+				}
+			}
+		}
+	}
+
+	&__votes {
+		grid-column-start: 3;
+		grid-column-end: 3;
+		align-self: center;
+		border-width: 1px 1px 1px 0;
+
+		@apply p-4 border-gray-900/10 rounded-e-md;
+	}
+}

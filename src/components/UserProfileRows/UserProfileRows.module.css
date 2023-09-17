@@ -1,0 +1,29 @@
+:root {
+  --kbs-color-contrast: var(--color);
+  --kbs-color-primary: 27 27 204;
+  --kbs-color-white: 255 255 255;
+  --kbs-color-blue: 27 27 204;
+  --kbs-color-red: 220 53 69;
+  --kbs-color-green: 32 201 151;
+  --kbs-color-pink: 232 62 140;
+  --kbs-color-black: 0 0 0;
+  --kbs-color-gray-200: 240 240 240;
+  --kbs-color-gray-900: 34 34 34;
+  --kbs-body-bg: #FFF;
+  --kbs-border-color: rgba(var(--color), 0.1);
+  --kbs-border-radius: .325rem;
+  --kbs-input-bg: var(--color);
+  --kbs-input-padding-x: .8rem;
+  --kbs-input-ppading-y: .8rem;
+  --kbs-input-ppading: var(--kbs-input-padding-x) var(--kbs-input-ppading-y);
+  --kbs-button-radius: .25rem ;
+}
+
+.profile-row {
+  overflow: hidden;
+}
+.profile-row__item--edit {
+  @apply grid grid-cols-[1fr_auto];
+}
+
+/*# sourceMappingURL=UserProfileRows.module.css.map */

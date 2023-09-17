@@ -1,0 +1,15 @@
+@use "./styles/variables";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./styles/structure";
+@import "./styles/appWrapper";
+
+@import "./styles/base";
+@import "./styles/forms";
+@import "./styles/header";
+@import "./styles/main";
+@import "./styles/typography";
+@import "./styles/cropper";

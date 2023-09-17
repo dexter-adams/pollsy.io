@@ -1,0 +1,10 @@
+.poll-header {
+	@apply p-5;
+}
+
+.choices {
+	display: grid;
+	grid-template-columns: 1fr auto auto;
+	grid-row-gap: 20px;
+	padding: 20px;
+}

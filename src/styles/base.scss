@@ -1,0 +1,23 @@
+.ios.ion-page {
+  padding-bottom: 100px;
+}
+
+a {
+  @apply text-blue;
+}
+
+.firebase-emulator-warning {
+  display: none !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  .ios body {
+    .app-theme-light {
+      @apply bg-white;
+    }
+
+    .app-theme-dark {
+      @apply bg-black;
+    }
+  }
+}

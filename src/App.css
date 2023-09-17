@@ -1,0 +1,144 @@
+:root {
+  --kbs-color-contrast: var(--color);
+  --kbs-color-primary: 27 27 204;
+  --kbs-color-white: 255 255 255;
+  --kbs-color-blue: 27 27 204;
+  --kbs-color-red: 220 53 69;
+  --kbs-color-green: 32 201 151;
+  --kbs-color-pink: 232 62 140;
+  --kbs-color-black: 0 0 0;
+  --kbs-color-gray-200: 240 240 240;
+  --kbs-color-gray-900: 34 34 34;
+  --kbs-body-bg: #FFF;
+  --kbs-border-color: rgba(var(--color), 0.1);
+  --kbs-border-radius: .325rem;
+  --kbs-input-bg: var(--color);
+  --kbs-input-padding-x: .8rem;
+  --kbs-input-ppading-y: .8rem;
+  --kbs-input-ppading: var(--kbs-input-padding-x) var(--kbs-input-ppading-y);
+  --kbs-button-radius: .25rem ;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html, body {
+  height: 100%;
+  background: gray;
+}
+
+#root {
+  @apply h-full;
+}
+
+.app-wrapper {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: 52px 1fr 52px;
+  @apply h-full;
+}
+
+.app-main {
+  grid-row: 1/span 3;
+  grid-column: 1/1;
+}
+
+.pollsy-container {
+  grid-template-areas: "content" "cta";
+  @apply grid grid-rows-[1fr_auto] h-full;
+}
+
+.pollsy-full-window {
+  grid-area: content/cta;
+  @apply grid grid-rows-[1fr] grid-cols-[1fr];
+}
+
+.pollsy-main {
+  grid-area: content;
+}
+
+.pollsy-primary-cta {
+  grid-area: cta;
+  @apply m-4;
+}
+
+.app-wrapper {
+  @apply bg-white overflow-x-hidden;
+}
+
+.ios.ion-page {
+  padding-bottom: 100px;
+}
+
+a {
+  @apply text-blue;
+}
+
+.firebase-emulator-warning {
+  display: none !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  .ios body .app-theme-light {
+    @apply bg-white;
+  }
+  .ios body .app-theme-dark {
+    @apply bg-black;
+  }
+}
+input {
+  @apply rounded-md;
+}
+input[type] {
+  background-color: color-mix(in srgb, currentColor 8%, transparent);
+}
+input[type=text] {
+  @apply px-5 py-3 mix-blend-difference;
+}
+input[type=tel] {
+  @apply px-5 py-3 mix-blend-difference;
+}
+input[type=email] {
+  @apply px-5 py-3 mix-blend-difference;
+}
+input[type=password] {
+  @apply px-5 py-3 mix-blend-difference;
+}
+
+.form {
+  @apply flex flex-col gap-4;
+}
+
+.form-row {
+  @apply flex flex-col gap-2;
+}
+
+.form-footer {
+  @apply flex flex-col gap-4;
+}
+
+.error {
+  @apply ring-1 ring-red px-2 py-2 rounded leading-none text-red text-xs;
+}
+
+.success {
+  @apply ring-1 ring-green px-2 py-2 rounded leading-none text-green text-xs;
+}
+
+.field-label {
+  @apply block mb-3;
+}
+
+h1, h2, h3, h4, h5 {
+  @apply mb-5;
+}
+
+h1 {
+  @apply text-3xl;
+}
+
+h2 {
+  @apply text-2xl;
+}
+
+/*# sourceMappingURL=App.css.map */

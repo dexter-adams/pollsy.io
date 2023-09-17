@@ -1,0 +1,37 @@
+.poll-cards {
+  @apply flex flex-col gap-4 px-4;
+
+  .poll-card {
+    background-color: color-mix(in srgb, currentColor 8%, transparent);
+
+    @apply grid gap-3 p-[20px] rounded-md;
+
+    &__question {
+      @apply text-lg font-bold;
+
+      a {
+        @apply text-[inherit];
+      }
+    }
+
+    &__voter-photos {
+      @apply flex align-middle justify-items-start flex-row-reverse;
+
+      div {
+        @apply relative w-[20px] h-[20px] rounded-full overflow-hidden bg-gray-900;
+
+        &:not(:last-child) {
+          @apply ml-[-10px] z-0;
+        }
+
+        img {
+          @apply object-cover;
+        }
+      }
+    }
+  }
+}
+
+.no-polls-message {
+  @apply text-xl text-center;
+}

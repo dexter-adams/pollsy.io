@@ -1,0 +1,18 @@
+a {
+  @apply text-blue;
+}
+
+.firebase-emulator-warning {
+  display: none !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  .ios body .app-theme-light {
+    @apply bg-white;
+  }
+  .ios body .app-theme-dark {
+    @apply bg-black;
+  }
+}
+
+/*# sourceMappingURL=base.css.map */
